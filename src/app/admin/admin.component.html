@@ -1,10 +1,7 @@
-Loading => {{loading$ | async}}
+<p>Data Used in other component via store</p>
 
 <ul>
     @for (item of departments$ | async; track $index) {
         <li> {{item.departmentName}} </li>
     }
 </ul>
-
-<br>
-<app-admin></app-admin>
